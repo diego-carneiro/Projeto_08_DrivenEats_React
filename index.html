@@ -1,124 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="reset.css" />
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300&display=swap" rel="stylesheet">    
-        <title>Driven Eats</title>
-    </head>
 
-    <body>
-        <div class="top-bar">
-            <div class="top-text">
-                <h1 class="logo">DrivenEats</h1>
-                <p class="subtitle">Sua comida em 6 minutos</p>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Driven Eats</title>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="top-text">
+            <h1 class="logo">DrivenEats</h1>
+            <p class="subtitle">Sua comida em 6 minutos</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="text-box">
+            <p class="chat">Primeiro, seu prato</p>
+        </div>
+        <div class="scroll">
+            <div class="food-box temaki" onclick="selectedfood1()">
+                <img class="food-img" src="/img/temaki.jpg" />
+                <p class="food-name"> Temaki</p>
+                <p class="description">Salmão com Shitake e Cebolinha</p>
+                <p class="price">R$ 7,99</p>
+            </div>
+
+            <div class="food-box macarrao" onclick="selectedfood2()">
+                <img class="food-img" src="/img/macarrao.jpg" />
+                <p class="food-name"> Macarrão</p>
+                <p class="description">Molho bechamel, brócolis e bacon</p>
+                <p class="price">R$20,00</p>
+            </div>
+            <div class="food-box feijoada" onclick="selectedfood3()">
+                <img class="food-img" src="/img/feijoada.jpg" />
+                <p class="food-name"> Feijoada Completa</p>
+                <p class="description">Acompanha arroz e couve</p>
+                <p class="price">R$20,00</p>
+            </div>
+            <div class="food-box frango" onclick="selectedfood4()">
+                <img class="food-img" src="/img/frango.jpg" />
+                <p class="food-name">Iscas de Frango</p>
+                <p class="description">Empanado e Crocante</p>
+                <p class="price">R$7,00</p>
             </div>
         </div>
-        
-        <div class="content">
-            <div class="text-box">
-                <p class="chat">Primeiro, seu prato</p>
-                </div>
-                <div class="scroll">
-                    <div class="food-box temaki" onclick="selectedfood1()">
-                        <img class="food-img" src="/img/temaki.jpg"/>
-                        <p class="food-name"> Temaki</p>
-                        <p class="description">Salmão com Shitake e Cebolinha</p>
-                        <p class="price">R$ 7,99</p>
-                    </div>
-                
-                    <div class="food-box macarrao" onclick="selectedfood2()">
-                        <img class="food-img" src="/img/macarrao.jpg"/>
-                        <p class="food-name"> Macarrão</p>
-                        <p class="description">Molho bechamel, brócolis e bacon</p>
-                        <p class="price">R$20,00</p>
-                    </div>
-                    <div class="food-box feijoada" onclick="selectedfood3()">
-                        <img class="food-img" src="/img/feijoada.jpg"/>
-                        <p class="food-name"> Feijoada Completa</p>
-                        <p class="description">Acompanha arroz e couve</p>
-                        <p class="price">R$20,00</p>
-                    </div>
-                    <div class="food-box frango" onclick="selectedfood4()">
-                        <img class="food-img" src="/img/frango.jpg"/>
-                        <p class="food-name">Iscas de Frango</p>
-                        <p class="description">Empanado e Crocante</p>
-                        <p class="price">R$7,00</p>
-                    </div>
-                </div>   
-                <div class="text-box">
-                <p class="chat">Agora, sua bebida</p>
-                </div>
-                <div class="scroll">
-                        <div class="food-box refri" onclick="selectedfood5()">
-                         <img class="food-img" src="/img/refrigerante.jpg"/>
-                     <p class="food-name"> Refrigerante</p>
-                     <p class="description">Coca-Cola original e zero, Guaraná original e zero</p>
-                     <p class="price">R$4,00</p>
-                        </div>
-                    <div class="food-box cerveja" onclick="selectedfood6()">
-                      <img class="food-img" src="/img/cerveja.jpg"/>
-                      <p class="food-name">Cervejas</p>
-                      <p class="description">Heineken, Skol, Brahma, Eisenbahn, Budweiser, Amstel</p>
-                      <p class="price">R$3,00</p>
-                    </div>
-                    <div class="food-box agua" onclick="selectedfood7()">
-                        <img class="food-img" src="/img/agua.jpg"/>
-                        <p class="food-name">Água</p>
-                        <p class="description">Mineral 600ml</p>
-                        <p class="price">R$2,00</p>
-                    </div>
-                    <div class="food-box suco" onclick="selectedfood8()">
-                        <img class="food-img" src="/img/suco.jpg"/>
-                        <p class="food-name">Sucos</p>
-                        <p class="description">Kiwi, Maracujá e Goiaba</p>
-                        <p class="price">R$4,50</p>
-                    </div>
-        
-                </div>
-            
-            <div class="text-box">
-                <p class="chat">Por fim, sua sobremesa</p>
-                </div>
-                <div class="scroll">
-                     <div class="food-box petit" onclick="selectedfood9()">
-                     <img class="food-img" src="/img/petit.jpg"/>
-                    <p class="food-name"> Petit Gateau</p>
-                    <p class="description">Bolo de chocolate e sorvete de creme</p>
-                    <p class="price">R$9,00</p>
-                    </div>
-                    <div class="food-box gelatina" onclick="selectedfood10()">
-                         <img class="food-img" src="/img/gelatina.jpg"/>
-                         <p class="food-name"> Gelatina</p>
-                         <p class="description">Sabores Variados</p>
-                         <p class="price">R$4,50</p>
-                    </div>
-                    <div class="food-box mousse" onclick="selectedfood11()">
-                        <img class="food-img" src="/img/mousse.jpg"/>
-                        <p class="food-name"> Mousse de Maracujá</p>
-                        <p class="description">Natural e com sementes</p>
-                        <p class="price">R$6,50</p>
-                    </div>
-                    <div class="food-box trufa" onclick="selectedfood12()">
-                        <img class="food-img" src="/img/trufa.jpg"/>
-                        <p class="food-name">Trufas de Chocolate</p>
-                        <p class="description">Morango, brigadeiro e doce de leite</p>
-                        <p class="price">R$2,00</p>
-                    </div>
+        <div class="text-box">
+            <p class="chat">Agora, sua bebida</p>
+        </div>
+        <div class="scroll">
+            <div class="food-box refri" onclick="selectedfood5()">
+                <img class="food-img" src="/img/refrigerante.jpg" />
+                <p class="food-name"> Refrigerante</p>
+                <p class="description">Coca-Cola original e zero, Guaraná original e zero</p>
+                <p class="price">R$4,00</p>
+            </div>
+            <div class="food-box cerveja" onclick="selectedfood6()">
+                <img class="food-img" src="/img/cerveja.jpg" />
+                <p class="food-name">Cervejas</p>
+                <p class="description">Heineken, Skol, Brahma, Eisenbahn, Budweiser, Amstel</p>
+                <p class="price">R$3,00</p>
+            </div>
+            <div class="food-box agua" onclick="selectedfood7()">
+                <img class="food-img" src="/img/agua.jpg" />
+                <p class="food-name">Água</p>
+                <p class="description">Mineral 600ml</p>
+                <p class="price">R$2,00</p>
+            </div>
+            <div class="food-box suco" onclick="selectedfood8()">
+                <img class="food-img" src="/img/suco.jpg" />
+                <p class="food-name">Sucos</p>
+                <p class="description">Kiwi, Maracujá e Goiaba</p>
+                <p class="price">R$4,50</p>
+            </div>
 
-                </div>
         </div>
 
-        <div class="bot-bar">
-                <div class="warning1">
-                    <p>Selecione os 3 itens para fechar o pedido</p>
-                </div>
+        <div class="text-box">
+            <p class="chat">Por fim, sua sobremesa</p>
+        </div>
+        <div class="scroll">
+            <div class="food-box petit" onclick="selectedfood9()">
+                <img class="food-img" src="/img/petit.jpg" />
+                <p class="food-name"> Petit Gateau</p>
+                <p class="description">Bolo de chocolate e sorvete de creme</p>
+                <p class="price">R$9,00</p>
             </div>
-        <script src="javascript.js"></script>
-    </body>
+            <div class="food-box gelatina" onclick="selectedfood10()">
+                <img class="food-img" src="/img/gelatina.jpg" />
+                <p class="food-name"> Gelatina</p>
+                <p class="description">Sabores Variados</p>
+                <p class="price">R$4,50</p>
+            </div>
+            <div class="food-box mousse" onclick="selectedfood11()">
+                <img class="food-img" src="/img/mousse.jpg" />
+                <p class="food-name"> Mousse de Maracujá</p>
+                <p class="description">Natural e com sementes</p>
+                <p class="price">R$6,50</p>
+            </div>
+            <div class="food-box trufa" onclick="selectedfood12()">
+                <img class="food-img" src="/img/trufa.jpg" />
+                <p class="food-name">Trufas de Chocolate</p>
+                <p class="description">Morango, brigadeiro e doce de leite</p>
+                <p class="price">R$2,00</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bot-bar">
+        <div class="warning1">
+            <p>Selecione os 3 itens para fechar o pedido</p>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+
 </html>
-
